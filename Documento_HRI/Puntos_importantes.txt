@@ -1,0 +1,24 @@
+Título: Representación háptica realista de la interacción de objetos deformables en entornos virtuales
+- Deformación de objetos en simulaciones en tiempo real
+- Detección de colisión (CD)
+	2 enfoques:
+	1: Método de la penalización (El valor de la fuerza está directamente relacionado con una medida de interpenetración)
+	2: Método de movimiento (Congela el movimiento a lo largo de la normal a todos los contactos)
+- Ley de Signorini (Modelar contacto)
+	1- La superficie de los cuerpos está entrelazada con triángulos)
+	Problema: La mayoría de los contactos aparecerán como la colisión canónica de dos triángulos (Fig. 3 = Distintos tipos de colisiones)
+
+	2- Problema de complementariedad lineal (LCP)
+	Para linealizar el problema de Signorini el espacio de contacto es congelado en el instante de tiempo actual
+- Ley de Coulomb (Modelar rozamiento)
+	Enfoque en piramides de 'k' lados
+- Algoritmo de Gauss-Seidel
+- Comparativa entre algoritmo GS y LCP
+	Tiempo de procesamiento mucho mayor con LCP, mejor algoritmo GS (se valora mucho la velocidad)
+	Comparación del ejemplo de la mesa simple y mesa con refuerzos
+- Enfoque corrotacional
+	(Requiere un tiempo de actualización entre 500 y 1000 Hz debido al uso en simulaciones en tiempo real)
+- Feedback de fuerzas
+	Ejemplo de la pinza y la tubería, 3 fases: acercamiento, extensión de la pinza y 2 posibles estados finales (pinza engancha o retrocede)
+	Gráficas de tiempo de respuesta (sin rozamientos = 3 ms, con rozamientos = 4 ms)
+- Utilidades de herramientas hápticas: desde instrumentos para diseño gráfico hasta usos en el campo de la medicina (operaciones)

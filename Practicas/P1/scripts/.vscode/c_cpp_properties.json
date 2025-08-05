@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/robotica/catkin_ws/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/robotica/catkin_ws/src/persona-robot/p1/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
